@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ZoneSync Support</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bg" aria-hidden="true"></canvas>
+<div class="crosshair"></div>
+
+<div class="ticker">
+  <div class="ticker__track" id="ticker"></div>
+</div>
+
+<div class="rail" id="rail-left">N 00.0000 · W 000.0000</div>
+<div class="rail rail__right" id="rail-right">LAT · LON · DRIFT</div>
+
+<main>
+  <header>
+    <span class="mark">◐</span>
+    <span class="wordmark" data-reveal>ZoneSync</span>
+  </header>
+
+  <section class="lede">
+    <h1>Support</h1>
+    <p data-reveal>Manage your meetings over many timezones.</p>
+  </section>
+
+  <section class="contact">
+    <div class="row">
+      <span class="label"><span class="spinner" data-phase="0"></span><span data-reveal>contact</span></span>
+      <a class="email" href="mailto:mtvolkan101@gmail.com" data-reveal>mtvolkan101@gmail.com</a>
+    </div>
+    <div class="row">
+      <span class="label"><span class="spinner" data-phase="3"></span><span data-reveal>response</span></span>
+      <span data-reveal>within 48 hours</span>
+    </div>
+    <div class="row">
+      <span class="label"><span class="spinner" data-phase="6"></span><span data-reveal>scope</span></span>
+      <span data-reveal>bugs · features · accounts</span>
+    </div>
+  </section>
+
+  <footer>
+    <span data-reveal>© ZoneSync</span>
+    <span class="clock" id="clock">—</span>
+  </footer>
+</main>
+
+<script src="bg.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
